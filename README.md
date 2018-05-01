@@ -15,11 +15,11 @@
 
 ### 效果截图
 <div align="center">
-    <img alt="index" src="https://github.com/grasonchan/simple-zhihu/raw/master/screenshot/index.png" />
-    <img alt="search" src="https://github.com/grasonchan/simple-zhihu/raw/master/screenshot/search.png" />
-    <img alt="topic" src="https://github.com/grasonchan/simple-zhihu/raw/master/screenshot/topic.png" />
-    <img alt="question" src="https://github.com/grasonchan/simple-zhihu/raw/master/screenshot/question.png" />
-    <img alt="people" src="https://github.com/grasonchan/simple-zhihu/raw/master/screenshot/people.png" />
+    <img alt="index" src="https://github.com/grasonchan/simple-zhihu/raw/master/screenshot/index.png" /><br /><br />
+    <img alt="search" src="https://github.com/grasonchan/simple-zhihu/raw/master/screenshot/search.png" /><br /><br />
+    <img alt="topic" src="https://github.com/grasonchan/simple-zhihu/raw/master/screenshot/topic.png" /><br /><br />
+    <img alt="question" src="https://github.com/grasonchan/simple-zhihu/raw/master/screenshot/question.png" /><br /><br />
+    <img alt="people" src="https://github.com/grasonchan/simple-zhihu/raw/master/screenshot/people.png" /><br /><br />
     <img alt="zhuanlan" src="https://github.com/grasonchan/simple-zhihu/raw/master/screenshot/zhuanlan.png" />
 </div>
 
