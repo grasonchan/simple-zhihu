@@ -1,10 +1,10 @@
-/* ---- 首页 ---- */
+/* 首页 */
 /* Safari header - 头部导航栏毛玻璃效果 */
 @supports (-webkit-backdrop-filter: none) {
 	.AppHeader.is-fixed {
     	-webkit-backdrop-filter: saturate(180%) blur(20px);
     	backdrop-filter: saturate(180%) blur(20px);
-    	background-color: rgba(255, 255, 255, 0.7);
+    	background-color: rgba(255, 255, 255, 0.85);
 	}
 }
 
@@ -13,6 +13,15 @@
     /* margin-bottom: 15px; */
     border-radius: 6px;
     /* box-shadow: 0 0 10px rgba(3,3,3,.1); */
+}
+
+/* 问题回答底部 - 固定操作栏 */
+@supports (-webkit-backdrop-filter: none) {
+	.RichContent-actions.is-fixed {
+		-webkit-backdrop-filter: saturate(180%) blur(20px);
+    	backdrop-filter: saturate(180%) blur(20px);
+    	background-color: rgba(255,255,255,.85);
+	}
 }
 
 /* 首页 & 发现 & 话题 */
@@ -33,36 +42,44 @@
 }
 
 /* 搜索框 */
-.SearchBar {
+.SearchBarExperiment {
 	margin: 6px 39px;
 }
 
-.SearchBar .Input-wrapper {
+.SearchBarExperiment .Input-wrapper {
 	border: 1px solid rgba(9,9,9,.1);
 }
 
-.SearchBar .Input-wrapper.is-focus {
-	border: 1px solid rgba(9,9,9,.2);
+.SearchBarExperiment .Input-wrapper.is-focus {
+	border: 1px solid rgba(9,9,9,.14);
 }
 
 .Input-wrapper.Input-wrapper--grey {
 	background: none;
 }
 
-.SearchBar-focusedInput {
+.SearchBarExperiment-focusedInput {
 	width: 326px;
 }
 
 .Icon.Icon--search {
-	fill: rgba(9,9,9,.1);
+	fill: rgba(9,9,9,.12);
 }
 
-.SearchBar-focusedSearchIcon .Icon {
-	fill: rgba(9,9,9,.2);
+.SearchBarExperiment-focusedSearchIcon .Icon {
+	fill: rgba(9,9,9,.16);
 }
 
-.SearchBar-hasValueSearchIcon .Icon {
-	fill: rgba(9,9,9,.2);
+.SearchBarExperiment-hasValueSearchIcon .Icon {
+	fill: rgba(9,9,9,.16);
+}
+
+.SearchBarExperiment-hasValueSearchIcon.Button--primary.Button--blue {
+	background-color: transparent;
+}
+
+.SearchBarExperiment-hasValueSearchIcon.Button--primary.Button--blue:hover {
+	background-color: transparent;
 }
 
 .AppHeader .Popover input.Input {
@@ -74,16 +91,16 @@
 	color: rgba(9,9,9,.3);
 }
 
-.AppHeader .Popover .SearchBar-focusedInput input.Input::-webkit-input-placeholder {
+.AppHeader .Popover .SearchBarExperiment-focusedInput input.Input::-webkit-input-placeholder {
    	color: rgba(9,9,9,.4);
 }
 
 /* 提问 */
-.SearchBar-askButton {
+.SearchBarExperiment-askButton {
 	display: none;
 }
 
-.SearchBar-hiddenAskButton {
+.SearchBarExperiment-hiddenAskButton {
 	opacity: 1;
 	-webkit-transform: scale(1);
 	transform: scale(1);
@@ -118,13 +135,25 @@
 	color: rgba(9,9,9,.4);
 }
 
-/* 提醒列表 & 私信列表 */
+.PushNotifications-header {
+	border-bottom: 1px solid rgba(9,9,9,.06);
+}
+
+.PushNotifications-tab:not(:last-child):after {
+	background: rgba(9,9,9,.1);
+}
+
+.PushNotifications-followTitle:after {
+	border-bottom: 1px solid rgba(9,9,9,.06);
+}
+
+/* 搜索列表 & 提醒列表 & 私信列表 */
 @supports (-webkit-backdrop-filter: none) {
 	.Popover-content.Popover-content--bottom.Popover-content--fixed.Popover-content--arrowed {
     	-webkit-backdrop-filter: saturate(180%) blur(20px);
     	backdrop-filter: saturate(180%) blur(20px);
     	background: none;
-    	background-color: rgba(255,255,255,.8);
+    	background-color: rgba(255,255,255,.85);
 	}
 
 	.Popover-content.Popover-content--bottom.Popover-content--fixed.Popover-content--arrowed {
@@ -137,8 +166,8 @@
 }
 
 .PushNotifications-item:hover {
-	background-color: rgba(220,220,220,.2);
-	cursor: pointer;
+    background-color: rgba(220,220,220,.2);
+    cursor: pointer;
 }
 
 .PushNotifications-newItem {
@@ -146,11 +175,15 @@
 }
 
 .PushNotifications-item a {
-	color: #215fad;
+    color: #215fad;
 }
 
 .Notifications-footer {
     background-color: transparent;
+}
+
+.Messages-header {
+	border-bottom: 1px solid rgba(9,9,9,.06);
 }
 
 .Messages-item:hover {
@@ -305,7 +338,8 @@
 
 
 
-/* ---- 搜索页 ---- */
+
+/* 搜索页 */
 .PageHeader.is-shown .SearchTabs {
 	background-color: transparent;
 }
@@ -359,7 +393,8 @@
 
 
 
-/* ---- 话题页 ---- */
+
+/* 话题页 */
 #TopicMain {
 	box-shadow: 0 1px 3px rgba(26,26,26,.1);
 }
@@ -395,7 +430,8 @@
 
 
 
-/* ---- 问题详情页 ---- */
+
+/* 问题详情页 */
 /* 问题已关闭 */
 .QuestionStatus-bar {
 	margin: 10px auto;
@@ -538,7 +574,8 @@
 
 
 
-/* ---- 个人主页 ---- */
+
+/* 个人主页 */
 .UserAvatar {
 	border-radius: 50%;
 }
@@ -628,12 +665,13 @@ background: #FFF;
 
 
 
-/* ---- 专栏 ---- */
+
+/* 专栏 */
 @supports (-webkit-backdrop-filter: none) {
 	.ColumnPageHeader.is-fixed {
     	-webkit-backdrop-filter: saturate(180%) blur(20px);
     	backdrop-filter: saturate(180%) blur(20px);
-    	background-color: rgba(255, 255, 255, 0.7);
+    	background-color: rgba(255, 255, 255, 0.85);
 	}
 }
 
