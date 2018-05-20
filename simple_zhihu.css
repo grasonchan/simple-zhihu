@@ -509,6 +509,12 @@
 	display: none;
 }
 
+/* 被收藏次数 */
+.Card-header.AnswerInfo-title>.Card-headerText {
+	width: 100%;
+	text-align: center;
+}
+
 /* 相关问题 */
 .Card-header.SimilarQuestions-title>.Card-headerText {
 	width: 100%;
