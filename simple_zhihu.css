@@ -491,6 +491,16 @@
 	border-radius: 6px;
 }
 
+/* 问题描述 - 显示全部 - 底部操作栏 */
+@supports (-webkit-backdrop-filter: none) {
+	.QuestionHeader-footer.is-fixed {
+		-webkit-backdrop-filter: saturate(180%) blur(20px);
+		backdrop-filter: saturate(180%) blur(20px);
+		background: none;
+		background-color: rgba(255,255,255,.8);
+	}
+}
+
 /* 被关闭的问题不允许添加新的回答 */
 .QuestionAnswers-answerTip {
 	margin-top: 0;
