@@ -265,7 +265,7 @@
 	/* display: none */
 }
 
-.ContentItem.ArticleItem>h2.ContentItem-title, .ContentItem.AnswerItem>h2.ContentItem-title {
+.ContentItem>h2.ContentItem-title, .ContentItem.ArticleItem>h2.ContentItem-title, .ContentItem.AnswerItem>h2.ContentItem-title {
 	margin-top: 0;
 }
 
