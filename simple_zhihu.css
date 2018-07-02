@@ -58,15 +58,15 @@
 }
 
 /* 搜索框 */
-.SearchBarExperiment {
+.SearchBar {
 	margin: 6px 39px;
 }
 
-.SearchBarExperiment .Input-wrapper {
+.SearchBar .Input-wrapper {
 	border: 1px solid rgba(9,9,9,.1);
 }
 
-.SearchBarExperiment .Input-wrapper.is-focus {
+.SearchBar-tool .Input-wrapper.is-focus {
 	border: 1px solid rgba(9,9,9,.14);
 }
 
@@ -74,7 +74,7 @@
 	background: none;
 }
 
-.SearchBarExperiment-focusedInput {
+.SearchBar-focusedInput {
 	width: 326px;
 }
 
@@ -82,19 +82,19 @@
 	fill: rgba(9,9,9,.12);
 }
 
-.SearchBarExperiment-focusedSearchIcon .Icon {
-	fill: rgba(9,9,9,.16);
+.SearchBar-focusedSearchIcon .Icon {
+	fill: rgba(9,9,9,.18);
 }
 
-.SearchBarExperiment-hasValueSearchIcon .Icon {
-	fill: rgba(9,9,9,.16);
+.SearchBar-hasValueSearchIcon .Icon {
+	fill: rgba(9,9,9,.18);
 }
 
-.SearchBarExperiment-hasValueSearchIcon.Button--primary.Button--blue {
+.SearchBar-hasValueSearchIcon.Button--primary.Button--blue {
 	background-color: transparent;
 }
 
-.SearchBarExperiment-hasValueSearchIcon.Button--primary.Button--blue:hover {
+.SearchBar-hasValueSearchIcon.Button--primary.Button--blue:hover {
 	background-color: transparent;
 }
 
@@ -107,16 +107,16 @@
 	color: rgba(9,9,9,.3);
 }
 
-.AppHeader .Popover .SearchBarExperiment-focusedInput input.Input::-webkit-input-placeholder {
+.AppHeader .Popover .SearchBar-focusedInput input.Input::-webkit-input-placeholder {
    	color: rgba(9,9,9,.4);
 }
 
 /* 提问 */
-.SearchBarExperiment-askButton {
+.SearchBar-askButton {
 	display: none;
 }
 
-.SearchBarExperiment-hiddenAskButton {
+.SearchBar-hiddenAskButton {
 	opacity: 1;
 	-webkit-transform: scale(1);
 	transform: scale(1);
@@ -164,7 +164,7 @@
 }
 
 /* 搜索列表 & 提醒列表 & 私信列表 */
-@supports (-webkit-backdrop-filter: none) {
+/* @supports (-webkit-backdrop-filter: none) {
 	.Popover-content.Popover-content--bottom.Popover-content--fixed.Popover-content--arrowed {
     	-webkit-backdrop-filter: saturate(180%) blur(20px);
     	backdrop-filter: saturate(180%) blur(20px);
@@ -175,6 +175,10 @@
 	.Popover-content.Popover-content--bottom.Popover-content--fixed.Popover-content--arrowed {
 		border: 1px solid rgba(9,9,9,.1);
 	}
+} */
+
+.PushNotifications-item {
+	padding: 15px 20px;
 }
 
 .PushNotifications-item:after {
@@ -190,6 +194,21 @@
     background-color: transparent;
 }
 
+.PushNotifications-newItem:before {
+	width: 5px;
+	height: 5px;
+	margin-left: -13px;
+	position: relative;
+	top: 9px;
+	/* 经典红 */
+	background: red;
+	/* 知乎蓝 */
+	background: #0084ff;
+	border-radius: 50%;
+	float: left;
+	content: '';
+}
+
 .PushNotifications-item a {
     color: #215fad;
 }
@@ -200,6 +219,18 @@
 
 .Messages-header {
 	border-bottom: 1px solid rgba(9,9,9,.06);
+}
+
+.Messages-item:after {
+	position: absolute;
+	right: 0;
+	bottom: 100%;
+	left: 0;
+	height: 1px;
+	padding: 0 16px;
+	background-color: rgba(9,9,9,.1);
+	content: "";
+	background-clip: content-box;
 }
 
 .Messages-item:hover {
