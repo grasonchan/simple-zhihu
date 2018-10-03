@@ -10,21 +10,26 @@
 ### 相关说明
 * 大多数浏览器暂未支持毛玻璃效果，目前仅对 Safari 浏览器生效，暂未支持毛玻璃效果的浏览器对该主题的其它效果生效
 * 因 Stylish 本身原因，Safari 无法直接安装主题，需在 Safari 的 Stylish 扩展新建一个主题，然后在其它浏览器安装主题后将代码和应用域复制过来，更新同理
-* 个人猜测知乎官方后续也会加入毛玻璃效果，因为知乎 Live 的导航栏官方已经使用了毛玻璃效果
 * 一切都在细节 ......
 
 ### 效果截图
 <div align="center">
-    <img alt="index" src="https://github.com/grasonchan/simple-zhihu/raw/master/screenshot/index.png" /><br /><br /><br />
-    <img alt="search" src="https://github.com/grasonchan/simple-zhihu/raw/master/screenshot/search.png" /><br /><br /><br />
-    <img alt="topic" src="https://github.com/grasonchan/simple-zhihu/raw/master/screenshot/topic.png" /><br /><br /><br />
-    <img alt="question" src="https://github.com/grasonchan/simple-zhihu/raw/master/screenshot/question.png" /><br /><br /><br />
-    <img alt="people" src="https://github.com/grasonchan/simple-zhihu/raw/master/screenshot/people.png" /><br /><br /><br />
-    <img alt="zhuanlan" src="https://github.com/grasonchan/simple-zhihu/raw/master/screenshot/zhuanlan.png" />
+    <img alt="zhihu" src="https://github.com/grasonchan/simple-zhihu/raw/master/screenshot/zhihu.png" />
 </div>
 
 ### 更新日志
 **2018**
+* 10.03 Update V2.2.0
+    * 显示头部导航栏的提问按钮
+    * 新增首页问题列表分割方式 - 可选分割线或卡片
+    * 新增提问、赞同、评论、收藏、举报、写想法、查看图片等 Modal 的背景色  - 可选白色、黑色、白色毛玻璃或黑色毛玻璃
+    * 修改边栏 “写回答、写文章、写想法” 的默认样式
+    * 删除可选项 - 首页问题列表的阴影动画
+    * 问题修复
+    * 样式调整
+    * 删除失效代码
+    * 精简代码
+
 * 07.02 Update V2.1.0
     * 修复了因知乎官方代码改动导致对搜索框和提问按钮应用失效的问题
     * 去除了提醒列表和私信列表的毛玻璃效果
