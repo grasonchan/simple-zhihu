@@ -1,0 +1,591 @@
+/* 全局 */
+
+/* =================== */
+/* ====== 毛玻璃 ====== */
+/* =================== */
+
+@supports (-webkit-backdrop-filter: none) {
+	/* ====== 导航栏 ======*/
+	.AppHeader.is-fixed {
+    	-webkit-backdrop-filter: saturate(180%) blur(20px);
+    	backdrop-filter: saturate(180%) blur(20px);
+    	background-color: rgba(255, 255, 255, 0.8)
+	}
+	/* ====== 导航栏 ======*/
+	
+	
+	/* ====== 问题底部固定操作栏 ====== */
+	.RichContent-actions.is-fixed {
+		-webkit-backdrop-filter: saturate(180%) blur(20px);
+		backdrop-filter: saturate(180%) blur(20px);
+		background-color: rgba(255,255,255,.8)
+	}
+	/* ====== 问题底部固定操作栏 ====== */
+	
+	
+	/* ====== 搜索页导航栏 is-shown ====== */
+	.PageHeader.is-shown .SearchTabs {
+		background-color: transparent
+	}
+	/* ====== 搜索页导航栏 is-shown ====== */
+
+
+	/* ====== 话题页导航栏 is-shown ====== */
+	.PageHeader.is-shown .Topic-bar {
+		background: none
+	}
+	/* ====== 话题页导航栏 is-shown ====== */
+	
+	
+	/* ====== 问题详情页 - 问题详情底部固定操作栏 ====== */
+	.QuestionHeader-footer.is-fixed {
+		-webkit-backdrop-filter: saturate(180%) blur(20px);
+		backdrop-filter: saturate(180%) blur(20px);
+		background: none;
+		background-color: rgba(255,255,255,.8)
+	}
+	/* ====== 问题详情页 - 问题详情底部固定操作栏 ====== */
+	
+	
+	/* ====== 个人主页 - 修改头像 ====== */
+	.UserAvatarEditor-mask {
+		border: 4px solid #fff;
+		border-radius: 50%;
+		-webkit-backdrop-filter: saturate(180%) blur(20px);
+		backdrop-filter: saturate(180%) blur(20px);
+		transition: all .5s ease-in-out
+	}
+	/* ====== 个人主页 - 修改头像 ====== */
+	
+	
+	/* ====== 专栏导航栏 ====== */
+	.ColumnPageHeader.is-fixed {
+		-webkit-backdrop-filter: saturate(180%) blur(20px);
+		backdrop-filter: saturate(180%) blur(20px);
+		background-color: rgba(255, 255, 255, 0.8)
+	}
+
+	.ColumnPageHeader-Line {
+		background-color: rgba(9,9,9,.1)
+	}
+	/* ====== 专栏导航栏 ====== */
+}
+
+
+
+
+/* ================== */
+/* ====== 去除广告 ====== */
+/* ================== */
+
+/* 问题列表插入广告 */
+.TopstoryItem--advertCard {
+	display: none
+}
+
+/* 边栏广告 */
+.Banner {
+	display: none
+}
+
+
+
+
+/* ===================== */
+/* ====== 全局控件 ====== */
+/* ===================== */
+
+/* 圆形头像 & 圆形图标 */
+.Avatar {
+	border-radius: 50%
+}
+/* 圆形头像 & 圆形图标 */
+
+
+/* Card 圆角 */
+.Card {
+    border-radius: 6px
+}
+/* Card 圆角 */
+
+
+/* Modal-inner */
+.Modal-inner {
+	border-radius: 6px
+}
+/* Modal-inner */
+
+
+/* 全局 svg 按钮 */
+.Button--plain {
+	color: rgba(9,9,9,.5)
+}
+
+.Button--plain:hover {
+	color: rgba(9,9,9,.6)
+}
+
+.Button--plain .Button-zi {
+	color: rgba(9,9,9,.4)
+}
+
+.Button--plain:hover .Button-zi {
+	color: rgba(9,9,9,.5)
+}
+/* 全局 svg 按钮 */
+
+
+
+
+/* =================== */
+/* ====== 导航栏 ====== */
+/* =================== */
+
+/* ====== 首页 & 发现 & 话题 ====== */
+.AppHeader-nav {
+	margin: 8px 28px
+}
+
+.AppHeader-navItem.is-active {
+	color: #333
+}
+
+.AppHeader-navItem {
+	color: #888
+}
+
+.AppHeader-navItem:hover {
+	color: #333
+}
+/* ====== 首页 & 发现 & 话题 ====== */
+
+
+/* ====== 搜索栏 ====== */
+/* 搜索框 */
+.SearchBar {
+	margin: 6px 8px
+}
+
+.SearchBar .Input-wrapper {
+	border: 1px solid rgba(9,9,9,.1)
+}
+
+.SearchBar-tool .Input-wrapper.is-focus {
+	border: 1px solid rgba(9,9,9,.14)
+}
+
+.Input-wrapper.Input-wrapper--grey {
+	background: none
+}
+
+.Zi.Zi--Search {
+	fill: rgba(9,9,9,.14)
+}
+
+.SearchBar-focusedSearchIcon .Zi.Zi--Search {
+	fill: rgba(9,9,9,.18)
+}
+
+.SearchBar-hasValueSearchIcon .Zi.Zi--Search {
+	fill: rgba(9,9,9,.18)
+}
+
+.SearchBar-hasValueSearchIcon.Button--primary.Button--blue {
+	background-color: transparent
+}
+
+.SearchBar-hasValueSearchIcon.Button--primary.Button--blue:hover {
+	background-color: transparent
+}
+
+.AppHeader .Popover input.Input {
+	color: #444
+}
+
+.AppHeader .Popover input.Input::-webkit-input-placeholder {
+	color: rgba(9,9,9,.3)
+}
+
+.AppHeader .Popover .SearchBar-focusedInput input.Input::-webkit-input-placeholder {
+   	color: rgba(9,9,9,.4)
+}
+/* 搜索框 */
+
+/* 提问按钮 */
+.SearchBar-askButton {
+	margin-left: 15px
+}
+/* 提问按钮 */
+/* ====== 搜索栏 ====== */
+
+
+/* ====== 提醒 & 私信 ====== */
+/* 提醒图标 */
+.Zi.Zi--Bell {
+	fill: rgba(9,9,9,.3)
+}
+
+.Zi.Zi--Bell:hover {
+	fill: rgba(9,9,9,.4)
+}
+/* 提醒图标 */
+
+/* 私信图标 */
+.Zi.Zi--Comments {
+	fill: rgba(9,9,9,.3)
+}
+
+.Zi.Zi--Comments:hover {
+	fill: rgba(9,9,9,.4)
+}
+/* 私信图标 */
+
+/* 提醒列表 */
+.PushNotifications-selectedTabIcon {
+	fill: rgba(9,9,9,.5)
+}
+
+.PushNotifications-tab {
+	color: rgba(9,9,9,.3)
+}
+
+.PushNotifications-tab:hover {
+	color: rgba(9,9,9,.4)
+}
+
+.PushNotifications-header {
+	border-bottom: 1px solid rgba(9,9,9,.06)
+}
+
+.PushNotifications-tab:not(:last-child):after {
+	background: rgba(9,9,9,.1)
+}
+
+.PushNotifications-followTitle:after {
+	border-bottom: 1px solid rgba(9,9,9,.06)
+}
+
+.PushNotifications-item {
+	padding: 15px 20px
+}
+
+.PushNotifications-item:after {
+    background-color: rgba(9,9,9,.1)
+}
+
+.PushNotifications-item:hover {
+    background-color: rgba(220,220,220,.2);
+    cursor: pointer
+}
+
+.PushNotifications-newItem {
+    background-color: transparent
+}
+
+/* 新消息圆点标示 */
+.PushNotifications-newItem:before {
+	width: 5px;
+	height: 5px;
+	margin-left: -13px;
+	position: relative;
+	top: 9px;
+	/* 经典红 */
+	background: red;
+	/* 知乎蓝 */
+	background: #0084ff;
+	border-radius: 50%;
+	float: left;
+	content: ""
+}
+/* 新消息圆点标示 */
+
+.PushNotifications-item a {
+    color: #215fad
+}
+
+.Notifications-footer {
+    background-color: transparent
+}
+
+.Messages-header {
+	border-bottom: 1px solid rgba(9,9,9,.06)
+}
+/* 提醒列表 */
+
+/* 私信列表 */
+.Messages-item:after {
+	position: absolute;
+	right: 0;
+	bottom: 100%;
+	left: 0;
+	height: 1px;
+	padding: 0 16px;
+	background-color: rgba(9,9,9,.1);
+	content: "";
+	background-clip: content-box
+}
+
+.Messages-item:hover {
+    background-color: rgba(220,220,220,.2)
+}
+
+.Messages-footer {
+    background-color: transparent
+}
+/* 私信列表 */
+/* ====== 提醒 & 私信 ====== */
+
+
+/* ====== 我的 ====== */
+/* 我的主页 & 设置 & 退出 */
+.Button.Menu-item.AppHeaderProfileMenu-item.Button--plain {
+    background: none;
+    color: rgba(9,9,9,.5)
+}
+
+.Button.Menu-item.is-active.AppHeaderProfileMenu-item.Button--plain:hover {
+    color: rgba(9,9,9,.7)
+}
+/* 我的主页 & 设置 & 退出 */
+/* ====== 我的 ====== */
+
+
+/* ====== PageHeader is-shown ====== */
+/* 搜索栏 */
+.TopstoryPageHeader-aside .Input-wrapper, .SearchTabs-inner .Input-wrapper {
+	border: 1px solid rgba(9,9,9,.1)
+}
+
+.TopstoryPageHeader-aside .Input-wrapper.is-focus, .SearchTabs-inner .Input-wrapper.is-focus {
+	border: 1px solid rgba(9,9,9,.14)
+}
+
+.TopstoryPageHeader-aside .SimpleSearchBar-input, .SearchTabs-inner .SimpleSearchBar-input {
+	background-color: #F8F8F8
+}
+
+.TopstoryPageHeader-aside .SimpleSearchBar-input.is-focus, .SearchTabs-inner .SimpleSearchBar-input.is-focus {
+	background-color: #FFF
+}
+
+.Input-wrapper.is-focus .Zi.Zi--Search {
+	fill: rgba(9,9,9,.18)
+}
+
+.SimpleSearchBar-searchButton.Button--primary.Button--blue {
+	background-color: transparent;
+  	border: none
+}
+
+.SimpleSearchBar-searchButton.Button--primary.Button--blue:hover {
+	background-color: transparent
+}
+
+.TopstoryPageHeader-aside input.Input, .SearchTabs-inner input.Input {
+	color: #444
+}
+
+.TopstoryPageHeader-aside input.Input::-webkit-input-placeholder, .SearchTabs-inner input.Input::-webkit-input-placeholder {
+	color: rgba(9,9,9,.3)
+}
+
+.TopstoryPageHeader-aside .Input-wrapper.is-focus input.Input::-webkit-input-placeholder, .SearchTabs-inner .Input-wrapper.is-focus input.Input::-webkit-input-placeholder {
+   	color: rgba(9,9,9,.4)
+}
+
+.PageHeader .TopstoryPageHeader-aside>.Button--primary.Button--blue {
+	display: none
+}
+
+.TopstoryPageHeader-aside .SimpleSearchBar-input {
+	width: 296px
+}
+/* 搜索栏 */
+/* ====== PageHeader is-shown ====== */
+
+
+
+
+/* =============================== */
+/* ====== 问题列表 & 文章列表 ====== */
+/* =============================== */
+
+/* ====== 链接颜色 ====== */
+.ContentItem.AnswerItem>.ContentItem-title a {
+	color: #1f69c6
+}
+
+.HotItem>.HotItem-content .HotItem-title {
+    color: #1f69c6
+}
+
+.ContentItem.ArticleItem>.ContentItem-title a {
+	color: #1f69c6
+}
+
+.ArticleItem .ArticleItem-Title {
+    color: #1f69c6
+}
+/* ====== 链接颜色 ====== */
+
+
+/* ====== 链接 margin ====== */
+.ContentItem.AnswerItem>h2.ContentItem-title, .ContentItem.ArticleItem>h2.ContentItem-title {
+	margin-top: 0
+}
+/* ====== 链接 margin ====== */
+
+
+/* ====== 图片居右 ====== */
+.RichContent-cover {
+    margin: 0 0 0 12px;
+    float: right
+}
+/* ====== 图片居右 ====== */
+
+
+
+
+/* ======================== */
+/* ====== Modal 背景 ====== */
+/* ======================== */
+
+/* 白色 */
+.Modal-backdrop {
+	background-color: #F1F1F1
+}
+  
+.Modal-wrapper>.Modal--large, .Modal-wrapper>.Modal--fullPage, .Modal--default {
+	border: .5px solid rgba(9,9,9,.1);
+	border-radius: 6px;
+	box-shadow: rgba(9,9,9,.1) 0 0 10px
+}
+  	
+.Modal-closeIcon {
+	fill: rgba(9,9,9,.3)
+}
+  
+.Modal-closeButton:hover>.Modal-closeIcon {
+	fill: rgba(9,9,9,.4)
+}
+
+.ImageView.is-active {
+	background-color: #F1F1F1
+}
+/* 白色 */
+
+/* 黑色 */
+.Modal-backdrop {
+	background-color: #999
+}
+  
+.Modal-wrapper>.Modal--large, .Modal-wrapper>.Modal--fullPage, .Modal--default {
+	border-radius: 6px
+}
+  	
+.Modal-closeIcon {
+	fill: rgba(255,255,255,.6)
+}
+  
+.Modal-closeButton:hover>.Modal-closeIcon {
+	fill: rgba(255,255,255,.7)
+}
+
+.ImageView.is-active {
+	background-color: #999
+}
+/* 黑色 */
+
+/* 白色毛玻璃 */
+@supports (-webkit-backdrop-filter: none) {
+	.Modal-backdrop {
+		-webkit-backdrop-filter: saturate(180%) blur(20px);
+		backdrop-filter: saturate(180%) blur(20px);
+	  	background-color: rgba(255, 255, 255, 0.8)
+	}
+  
+	.Modal-wrapper>.Modal--large, .Modal-wrapper>.Modal--fullPage, .Modal--default {
+		border: .5px solid rgba(9,9,9,.1);
+		border-radius: 6px;
+	  	box-shadow: rgba(9,9,9,.1) 0 0 10px
+	}
+  	
+	.Modal-closeIcon {
+		fill: rgba(9,9,9,.3)
+	}
+  
+	.Modal-closeButton:hover>.Modal-closeIcon {
+		fill: rgba(9,9,9,.4)
+	}
+	
+	.ImageView.is-active {
+		-webkit-backdrop-filter: saturate(180%) blur(20px);
+		backdrop-filter: saturate(180%) blur(20px);
+		background-color: rgba(255, 255, 255, 0.8)
+	}
+}
+/* 白色毛玻璃 */
+
+/* 黑色毛玻璃 */
+@supports (-webkit-backdrop-filter: none) {
+	.Modal-backdrop {
+		-webkit-backdrop-filter: saturate(180%) blur(20px);
+		backdrop-filter: saturate(180%) blur(20px);
+	  	background-color: rgba(9,9,9,0.8)
+	}
+  
+	.Modal-wrapper>.Modal--large, .Modal-wrapper>.Modal--fullPage, .Modal--default {
+		border-radius: 6px
+	}
+  	
+	.Modal-closeIcon {
+		fill: rgba(255,255,255,.6)
+	}
+  
+	.Modal-closeButton:hover>.Modal-closeIcon {
+		fill: rgba(255,255,255,.7)
+	}
+	
+	.ImageView.is-active {
+		-webkit-backdrop-filter: saturate(180%) blur(20px);
+		backdrop-filter: saturate(180%) blur(20px);
+		background-color: rgba(9,9,9,0.8)
+	}
+}
+/* 黑色毛玻璃 */
+
+
+
+
+/* ======================= */
+/* ====== 知乎相关 ======*/
+/* ======================= */
+.GlobalSideBar .Sticky .Footer {
+	display: none
+}
+
+.SearchSideBar .Sticky .Footer {
+	display: none
+}
+
+.TopstorySideBar .Sticky>.Footer {
+	display: none
+}
+
+.Question-sideColumn .Sticky .Footer {
+	display: none
+}
+
+.Profile-sideColumn .Footer {
+	display: none
+}
+
+
+
+
+/* =============================== */
+/* ====== 建议反馈 & 回到顶部 ====== */
+/* =============================== */
+.CornerButtons {
+	display: none
+}

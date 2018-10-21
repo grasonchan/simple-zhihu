@@ -1,0 +1,54 @@
+/* 搜索页 */
+
+/* ====================== */
+/* ====== Live Tab ====== */
+/* ====================== */
+
+.LiveAvatar-wrapper {
+	border-radius: 50%
+}
+
+.LiveAvatar-column {
+	width: calc(50%)
+}
+
+.LiveAvatar-column+.LiveAvatar-column {
+	border-left: 0
+}
+
+.LiveAvatar-img.alignCenter {
+	border-radius: 0
+}
+
+
+
+
+/* ================== */
+/* ====== 边栏 ====== */
+/* ================== */
+
+/* ====== 相关结果 ====== */
+.SearchRecommendations>.SearchRecommendations-title {
+	text-align: center
+}
+
+.Search-container .SearchSideBar .SearchRecommendationItem>img {
+	border-radius: 150px
+}
+
+.Search-container .SearchSideBar .SearchRecommendationItem>img[alt="电子书"] {
+	border-radius: 0
+}
+/* ====== 相关结果 ====== */
+
+
+/* ====== 知乎热搜 ====== */
+.TopSearch>.Card-header>.Card-headerText {
+	width: 100%;
+	text-align: center
+}
+
+.TopSearch-items>.TopSearch-item {
+	padding: 3px 17px
+}
+/* ====== 知乎热搜 ====== */

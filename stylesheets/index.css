@@ -1,0 +1,120 @@
+/* 首页 */
+
+/* ===================== */
+/* ====== 问题列表 ====== */
+/* ===================== */
+
+/* ====== 布局方式 ====== */
+/* 分割线布局 */
+.Card.TopstoryV2-noMarginCard.TopstoryV2-tabCard {
+	border-radius: 6px 6px 0 0;
+  	box-shadow: 0 1px 3px rgba(26,26,26,.1)
+}
+
+.Card.TopstoryItem.TopstoryItem-isRecommend {
+	border-radius: 0
+}
+
+.TopstoryV2-content .Card.TopstoryItem {
+	border-radius: 0;
+	box-shadow: 0 1px 3px rgba(26,26,26,.1)
+}
+
+.HotItem:not(:first-child) {
+	border-top: 1px solid #f0f2f7 !important
+}
+/* 分割线布局 */
+
+/* 卡片布局 */
+.Card.TopstoryV2-noMarginCard.TopstoryV2-tabCard {
+	margin-bottom: 0;
+  	border-radius: 6px 6px 0 0
+}
+
+.TopstoryV2-mainColumn .Card {
+	margin-bottom: 15px;
+	border-radius: 6px;
+	box-shadow: 0 1px 3px rgba(26,26,26,.1)
+}
+
+.Card.TopstoryItem.TopstoryItem-isRecommend:first-child {
+	border-radius: 0 0 6px 6px
+}
+
+.TopstoryV2-content .Card.TopstoryItem:first-child {
+	border-radius: 0 0 6px 6px
+}
+
+.HotItem:not(:first-child) {
+	border-top: 1px solid #f0f2f7
+}
+/* 卡片布局 */
+/* ====== 布局方式 ====== */
+
+
+/* ====== 你可能感兴趣的话题 ====== */
+.ActionCard>.ActionCard-topicsContainer>.ActionCard-topics>.ActionCard-topic {
+	width: 163.5px
+}
+
+.ActionCard>.ActionCard-topicsContainer>.ActionCard-topics>.ActionCard-topic>.ActionCard-topic-button {
+	height: 26px
+}
+/* ====== 你可能感兴趣的话题 ====== */
+
+
+
+
+/* ================== */
+/* ====== 边栏 ====== */
+/* ================== */
+
+/* ====== 写回答 & 写文章 & 写想法 ====== */
+.GlobalWrite-navIcon {
+	width: 38px;
+  	height: 38px;
+  	color: rgba(9,9,9,.4)
+}
+
+.GlobalWrite-navItem:hover>.GlobalWrite-navIcon {
+	color: rgba(9,9,9,.5)
+}
+
+.GlobalWrite-navTitle {
+	font-size: 14px;
+  	color: rgba(9,9,9,.5)
+}
+
+.GlobalWrite-navItem:hover>.GlobalWrite-navTitle {
+	color: rgba(9,9,9,.6)
+}
+/* ====== 写回答 & 写文章 & 写想法 ====== */
+
+
+/* ====== 边栏控件 ====== */
+/* 类别列表 */
+.GlobalSideBar-categoryLabel {
+	font-size: 14px;
+	color: rgba(9,9,9,.5)
+}
+/* 类别列表 */
+
+/* nav 列表 */
+.GlobalSideBar-navIcon {
+	fill: rgba(9,9,9,.4)
+}
+
+.GlobalSideBar-navList .Button {
+	color: rgba(9,9,9,.5)
+}
+
+.GlobalSideBar-navNumber {
+	background: none;
+    color: rgba(9,9,9,.4)
+}
+
+.GlobalSideBar-navLink:hover .GlobalSideBar-navNumber {
+	background: none
+}
+/* nav 列表 */
+/* ====== 边栏控件 ====== */

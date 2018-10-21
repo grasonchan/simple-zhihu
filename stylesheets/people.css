@@ -1,0 +1,83 @@
+/* 个人主页 */
+
+/* ===================== */
+/* ====== 用户头像 ====== */
+/* ===================== */
+
+/* ====== 圆形头像 ====== */
+.UserAvatar {
+	border-radius: 50%
+}
+/* ====== 圆形头像 ====== */
+
+
+/* ====== 修改头像 ====== */
+.UserAvatarEditor-maskInner {
+    border: 0;
+    border-radius: 50%
+}
+
+.UserAvatarEditor-cameraIcon {
+    margin-bottom: 0;
+    width: 60px;
+    height: 60px
+}
+
+.UserAvatarEditor-maskInnerText {
+    display: none
+}
+/* ====== 修改头像 ====== */
+
+
+
+
+/* ======================== */
+/* ====== 主栏 & 边栏 ====== */
+/* ======================== */
+
+/* ====== 主栏 ====== */
+.Profile-mainColumn>.Card.ProfileMain {
+	border-radius: 6px
+}
+
+.Card.ProfileMain>.List.ProfileActivities .List-item {
+	padding: 20px 40px
+}
+/* ====== 主栏 ====== */
+
+
+/* ====== 边栏 ====== */
+/* 个人成就 */
+.Card-header.Profile-sideColumnTitle>.Card-headerText {
+	width: 100%;
+	text-align: center
+}
+/* 个人成就 */
+
+.Profile-sideColumn>.Card.FollowshipCard {
+	margin-bottom: 10px;
+	border-radius: 6px
+}
+
+.Profile-sideColumn>.Profile-lightList, .Profile-sideColumn>.Profile-footerOperations {
+    margin: 10px 0;
+    padding: 10px 25px;
+    background-color: #FFF;
+    border-radius: 6px;
+	box-shadow: 0 1px 3px rgba(26,26,26,.1);
+	box-sizing: border-box
+}
+
+.Profile-lightList>.Profile-lightItem {
+    border-top: 0
+}
+
+.Profile-lightList>.Profile-lightItem:last-child {
+    border-bottom: 0
+}
+
+.Profile-sideColumn .Profile-footerOperations {
+    text-align: center;
+	border-bottom: 0
+}
+/* ====== 边栏 ====== */

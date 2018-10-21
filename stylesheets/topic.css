@@ -1,0 +1,53 @@
+/* 话题页 */
+
+/* ===================== */
+/* ====== 话题卡片 ====== */
+/* ===================== */
+
+.ContentLayout-mainColumn>.Card {
+    margin-bottom: 0;
+    background: none;
+    border-radius: 0;
+    box-shadow: none
+}
+
+.ContentLayout-mainColumn>.Card>div:first-child {
+    background-color: #FFF;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(26,26,26,.1)
+}
+
+/* 话题图标 */
+.TopicCard-image {
+	border-radius: 50%
+}
+/* 话题图标 */
+
+
+
+
+/* ===================== */
+/* ====== 话题详情 ====== */
+/* ===================== */
+
+.Topic-bar.Topic-bar--borderTop {
+    margin-top: 10px;
+    border-top: 0;
+    border-bottom: 1px solid #f1f1f1;
+    border-radius: 6px 6px 0 0;
+    box-shadow: 0 1px 3px rgba(9,9,9,.1)
+}
+
+.Topic-bar--borderBottom {
+    margin-top: 10px;
+    border-radius: 6px 6px 0 0
+}
+
+.ContentLayout>.ContentLayout-mainColumn>#TopicMain {
+	box-shadow: none
+}
+
+.ContentLayout>.ContentLayout-mainColumn>#TopicMain .Card {
+    border-radius: 0 0 6px 6px;
+    box-shadow: 0 1px 3px rgba(26,26,26,.1)
+}
