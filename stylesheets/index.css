@@ -6,7 +6,7 @@
 
 /* ====== 布局方式 ====== */
 /* 分割线布局 */
-.Card.TopstoryV2-noMarginCard.TopstoryV2-tabCard {
+.Card.Topstory-noMarginCard.Topstory-tabCard {
 	border-radius: 6px 6px 0 0;
   	box-shadow: 0 1px 3px rgba(26,26,26,.1)
 }
@@ -15,7 +15,7 @@
 	border-radius: 0
 }
 
-.TopstoryV2-content .Card.TopstoryItem {
+.Topstory-content .Card.TopstoryItem {
 	border-radius: 0;
 	box-shadow: 0 1px 3px rgba(26,26,26,.1)
 }
@@ -26,12 +26,12 @@
 /* 分割线布局 */
 
 /* 卡片布局 */
-.Card.TopstoryV2-noMarginCard.TopstoryV2-tabCard {
+.Card.Topstory-noMarginCard.Topstory-tabCard {
 	margin-bottom: 0;
   	border-radius: 6px 6px 0 0
 }
 
-.TopstoryV2-mainColumn .Card {
+.Topstory-mainColumn .Card {
 	margin-bottom: 15px;
 	border-radius: 6px;
 	box-shadow: 0 1px 3px rgba(26,26,26,.1)
@@ -41,7 +41,7 @@
 	border-radius: 0 0 6px 6px
 }
 
-.TopstoryV2-content .Card.TopstoryItem:first-child {
+.Topstory-content .Card.TopstoryItem:first-child {
 	border-radius: 0 0 6px 6px
 }
 
@@ -50,6 +50,13 @@
 }
 /* 卡片布局 */
 /* ====== 布局方式 ====== */
+
+
+/* ====== 图片圆角 ====== */
+.ztext .origin_image, .ztext .content_image, .ArticleItem-image {
+	border-radius: 6px
+}
+/* ====== 图片圆角 ====== */
 
 
 /* ====== 你可能感兴趣的话题 ====== */

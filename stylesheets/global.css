@@ -1,5 +1,16 @@
 /* 全局 */
 
+/* ================== */
+/* ====== 字体 ====== */
+/* ================== */
+p {
+	line-height: 1.8em;
+	letter-spacing: .2px
+}
+
+
+
+
 /* =================== */
 /* ====== 毛玻璃 ====== */
 /* =================== */
@@ -132,7 +143,36 @@
 .Button--plain:hover .Button-zi {
 	color: rgba(9,9,9,.5)
 }
+
+/* 申请授权 & 禁止转载 */
+a.Menu-item.AnswerItem-selfMenuItem {
+	color: rgba(9,9,9,.5)
+}
+
+a.Menu-item.AnswerItem-selfMenuItem:hover {
+	color: rgba(9,9,9,.6)
+}
+/* 申请授权 & 禁止转载 */
 /* 全局 svg 按钮 */
+
+
+
+
+/* ===================== */
+/* ====== 鼠标移上表情的动效 ====== */
+/* ===================== */
+.StickerPopover:hover {
+	cursor: pointer
+}
+
+.StickerPopover img {
+	transition: transform .3s
+}
+
+.StickerPopover:hover img {
+	transform: scale(1.3);
+	transition: transform .3s
+}
 
 
 
