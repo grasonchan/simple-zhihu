@@ -43,6 +43,16 @@
 .Card.ProfileMain>.List.ProfileActivities .List-item {
 	padding: 20px 40px
 }
+
+/* 更多 */
+.Tabs-link>.Button--plain {
+	color: #1A1A1A
+}
+
+.Profile-popoverMenuItem .Link-meta {
+	color: rgba(9,9,9,.4)
+}
+/* 更多 */
 /* ====== 主栏 ====== */
 
 

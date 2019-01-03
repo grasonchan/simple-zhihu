@@ -1,4 +1,10 @@
 /* 搜索页 */
+.SearchItem-avatarWrapper {
+	border-radius: 50%
+}
+
+
+
 
 /* ====================== */
 /* ====== Live Tab ====== */
@@ -19,6 +25,31 @@
 .LiveAvatar-img.alignCenter {
 	border-radius: 0
 }
+
+
+
+
+/* 排序 */
+.Select-option {
+	color: rgba(9,9,9,.5)
+}
+
+.Select-option:hover {
+	color: rgba(9,9,9,.6)
+}
+/* 排序 */
+
+/* 主栏阴影 */
+.Card.TopSearch.TopSearch--new {
+	box-shadow: 0 1px 3px rgba(26, 26, 26, 0.1)
+}
+/* 主栏阴影 */
+
+/* 边栏阴影 */
+.Card.SearchResult-Card {
+	box-shadow: 0 1px 3px rgba(26, 26, 26, 0.1)
+}
+/* 边栏阴影 */
 
 
 

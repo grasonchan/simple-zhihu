@@ -98,6 +98,17 @@
 /* ====== 写回答 & 写文章 & 写想法 ====== */
 
 
+/* ====== 我的草稿 ====== */
+.Zi.Zi--Draft {
+	color: rgba(9,9,9,.4)
+}
+
+.GlobalSideBar-navText {
+	color: rgba(9,9,9,.5)
+}
+/* ====== 我的草稿 ====== */
+
+
 /* ====== 边栏控件 ====== */
 /* 类别列表 */
 .GlobalSideBar-categoryLabel {
