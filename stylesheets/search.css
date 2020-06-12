@@ -3,6 +3,36 @@
 	border-radius: 50%
 }
 
+/* 话题图片 */
+.SearchTopicHeader-ImageWrapper {
+	border-radius: 50%
+}
+
+/* 话题图片 tall */
+.SearchTopicHeader-ImageWrapper--tall {
+	border-radius: 2px
+}
+
+/* 卡片圆角 */
+.Card.SearchResult-Card .KfeCollection-PcCollegeCard-wrapper {
+	border-radius: 6px
+}
+
+.Card.SearchResult-Card .KfeCollection-PcCollegeCard-root {
+	border-radius: 6px
+}
+/* 卡片圆角 */
+
+/* 电子书图片 */
+.KfeCollection-Image-Wrapper, .KfeCollection-PcCollegeCard-image img {
+	border-radius: 50%
+}
+
+/* 电子书图片 tall */
+.KfeCollection-Image-Wrapper[style*="height: 80px"], .KfeCollection-Image-Wrapper[style*="height: 80px"] img {
+	border-radius: 2px
+}
+
 
 
 
@@ -42,6 +72,20 @@
 /* 主栏阴影 */
 .Card.TopSearch.TopSearch--new {
 	box-shadow: 0 1px 3px rgba(26, 26, 26, 0.1)
+}
+
+/* 热点 */
+.MinorHotSpot .Card.SearchResult-Card {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none
+}
+
+/* 最新讨论 */
+.TimeBox-MainContent .Card.SearchResult-Card {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none
 }
 /* 主栏阴影 */
 
