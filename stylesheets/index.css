@@ -7,17 +7,19 @@
 /* ====== 布局方式 ====== */
 /* 分割线布局 */
 .Card.Topstory-noMarginCard.Topstory-tabCard {
-	border-radius: 6px 6px 0 0;
-  	box-shadow: 0 1px 3px rgba(26,26,26,.1)
+	border-radius: 6px 6px 0 0
+}
+
+.ListShortcut .Topstory-recommend .Card, .ListShortcut .Topstory-follow .Card {
+	border-radius: 0
 }
 
 .Card.TopstoryItem.TopstoryItem-isRecommend {
 	border-radius: 0
 }
 
-.Topstory-content .Card.TopstoryItem {
-	border-radius: 0;
-	box-shadow: 0 1px 3px rgba(26,26,26,.1)
+.Card.TopstoryItem.TopstoryItem-isFollow {
+	border-radius: 0
 }
 
 .HotItem:not(:first-child) {
@@ -127,8 +129,8 @@
 }
 
 .GlobalSideBar-navNumber {
-	background: none;
-    color: rgba(9,9,9,.4)
+	background: none !important;
+  color: rgba(9,9,9,.4)
 }
 
 .GlobalSideBar-navLink:hover .GlobalSideBar-navNumber {

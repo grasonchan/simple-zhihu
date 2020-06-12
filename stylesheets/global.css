@@ -95,13 +95,17 @@ p {
 }
 
 /* 边栏广告 */
+.Question-sideColumnAdContainer {
+	display: none
+}
+
 .Pc-card {
 	display: none
 }
 
 /* ====== 问题详情页边栏广告 ====== */
 .Question-sideColumn .Sticky>.Card:first-child {
-	margin-bottom: 0
+	display: none
 }
 /* ====== 问题详情页边栏广告 ====== */
 
@@ -187,32 +191,32 @@ a.Menu-item.AnswerItem-selfMenuItem:hover {
 /* ====== 导航栏 ====== */
 /* =================== */
 
-/* ====== 首页 & 发现 & 话题 ====== */
-.AppHeader-nav {
-	margin: 8px 28px
+/* ====== 首页 & 发现 & 等你来答 ====== */
+.AppHeader-Tabs {
+	margin: 0 28px
 }
 
-.AppHeader-navItem.is-active {
+.AppHeader-TabsLink.is-active {
 	color: #333
 }
 
-.AppHeader-navItem {
+.AppHeader-TabsLink {
 	color: #888
 }
 
-.AppHeader-navItem:hover {
+.AppHeader-TabsLink:hover {
 	color: #333
 }
-/* ====== 首页 & 发现 & 话题 ====== */
+/* ====== 首页 & 发现 & 等你来答 ====== */
 
 
 /* ====== 搜索栏 ====== */
 /* 搜索框 */
 .SearchBar {
-	margin: 6px 8px
+	margin: 0 25px
 }
 
-.SearchBar .Input-wrapper {
+.SearchBar-tool .Input-wrapper {
 	border: 1px solid rgba(9,9,9,.1)
 }
 
@@ -228,20 +232,17 @@ a.Menu-item.AnswerItem-selfMenuItem:hover {
 	fill: rgba(9,9,9,.14)
 }
 
-.SearchBar-focusedSearchIcon .Zi.Zi--Search {
-	fill: rgba(9,9,9,.18)
-}
-
-.SearchBar-hasValueSearchIcon .Zi.Zi--Search {
-	fill: rgba(9,9,9,.18)
-}
-
-.SearchBar-hasValueSearchIcon.Button--primary.Button--blue {
+.SearchBar-searchButton.Button--primary.Button--blue {
 	background-color: transparent
 }
 
-.SearchBar-hasValueSearchIcon.Button--primary.Button--blue:hover {
-	background-color: transparent
+.SearchBar-searchButton.Button--primary.Button--blue:hover {
+	border-color: transparent
+}
+
+.SimpleSearchBar-solidSearchButton.Button--primary.Button--blue {
+	background-color: transparent;
+	border-color: transparent
 }
 
 .AppHeader .Popover input.Input {
@@ -620,7 +621,7 @@ a.Menu-item.AnswerItem-selfMenuItem:hover {
 	display: none
 }
 
-.TopstorySideBar .Sticky>.Footer {
+.TopicSideBar .Sticky .Footer {
 	display: none
 }
 
