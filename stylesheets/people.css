@@ -6,26 +6,26 @@
 
 /* ====== 圆形头像 ====== */
 .UserAvatar {
-	border-radius: 50%
+  border-radius: 50%
 }
 /* ====== 圆形头像 ====== */
 
 
 /* ====== 修改头像 ====== */
 .UserAvatarEditor-maskInner {
-    border: 0;
-    border-radius: 50%;
-    background: none
+  border: 0;
+  border-radius: 50%;
+  background: none
 }
 
 .UserAvatarEditor-cameraIcon {
-    margin-bottom: 0;
-    width: 60px;
-    height: 60px
+  margin-bottom: 0;
+  width: 60px;
+  height: 60px
 }
 
 .UserAvatarEditor-maskInnerText {
-    display: none
+  display: none
 }
 /* ====== 修改头像 ====== */
 
@@ -38,20 +38,20 @@
 
 /* ====== 主栏 ====== */
 .Profile-mainColumn>.Card.ProfileMain {
-	border-radius: 6px
+  border-radius: 6px
 }
 
 .Card.ProfileMain>.List.ProfileActivities .List-item {
-	padding: 20px 40px
+  padding: 20px 40px
 }
 
 /* 更多 */
 .Tabs-link>.Button--plain {
-	color: #1A1A1A
+  color: #1A1A1A
 }
 
 .Profile-popoverMenuItem .Link-meta {
-	color: rgba(9,9,9,.4)
+  color: rgba(9,9,9,.4)
 }
 /* 更多 */
 /* ====== 主栏 ====== */
@@ -60,35 +60,35 @@
 /* ====== 边栏 ====== */
 /* 个人成就 */
 .Card-header.Profile-sideColumnTitle>.Card-headerText {
-	width: 100%;
-	text-align: center
+  width: 100%;
+  text-align: center
 }
 /* 个人成就 */
 
 .Profile-sideColumn>.Card.FollowshipCard {
-	margin-bottom: 10px;
-	border-radius: 6px
+  margin-bottom: 10px;
+  border-radius: 6px
 }
 
 .Profile-sideColumn>.Profile-lightList, .Profile-sideColumn>.Profile-footerOperations {
-    margin: 10px 0;
-    padding: 10px 25px;
-    background-color: #FFF;
-    border-radius: 6px;
-	box-shadow: 0 1px 3px rgba(26,26,26,.1);
-	box-sizing: border-box
+  margin: 10px 0;
+  padding: 10px 25px;
+  background-color: #FFF;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(26,26,26,.1);
+  box-sizing: border-box
 }
 
 .Profile-lightList>.Profile-lightItem {
-    border-top: 0
+  border-top: 0
 }
 
 .Profile-lightList>.Profile-lightItem:last-child {
-    border-bottom: 0
+  border-bottom: 0
 }
 
 .Profile-sideColumn .Profile-footerOperations {
-    text-align: center;
-	border-bottom: 0
+  text-align: center;
+  border-bottom: 0
 }
 /* ====== 边栏 ====== */

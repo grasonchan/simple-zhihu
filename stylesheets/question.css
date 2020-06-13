@@ -117,7 +117,7 @@
 }
 
 .List .List-item>.ContentItem.AnswerItem .RichContent-inner {
-    padding: 10px 15px
+  padding: 10px 15px
 }
 /* ====== 回答卡片 padding ====== */
 
@@ -177,8 +177,8 @@
 .AnswerForm-cancel {
 	height: 34px;
 	padding: 0 16px;
-  	font-size: 14px;
-  	line-height: 34px;
+  font-size: 14px;
+  line-height: 34px;
 	color: #FFFFFF;
 	background-color: #0084FF;
 	border-radius: 3px
@@ -186,7 +186,7 @@
 
 .AnswerForm-cancel:hover {
 	background-color: hsl(208.94117647058823, 100%, 45%);
-  	border-bottom: 0
+  border-bottom: 0
 }
 /* 保存草稿并离开 / 取消 */
 
@@ -257,7 +257,7 @@
 }
 
 .SimilarQuestions-item .Button:hover {
-    color: #175199;
+  color: #175199;
 	border-bottom: none
 }
 /* ====== 相关问题 ====== */
