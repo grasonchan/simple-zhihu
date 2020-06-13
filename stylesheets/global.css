@@ -3,6 +3,7 @@
 /* ================== */
 /* ====== 字体 ====== */
 /* ================== */
+
 p {
 	line-height: 1.8em;
 	letter-spacing: .2px
@@ -15,12 +16,12 @@ p {
 /* ====== 毛玻璃 ====== */
 /* =================== */
 
-@supports (-webkit-backdrop-filter: none) {
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
 	/* ====== 导航栏 ======*/
 	.AppHeader.is-fixed {
     	-webkit-backdrop-filter: saturate(180%) blur(20px);
     	backdrop-filter: saturate(180%) blur(20px);
-    	background-color: rgba(255, 255, 255, 0.8)
+    	background-color: rgba(255, 255, 255, .8)
 	}
 	/* ====== 导航栏 ======*/
 	
@@ -59,17 +60,26 @@ p {
 	
 	
 	/* ====== 个人主页 - 修改头像 ====== */
+	.UserAvatarEditor {
+		border-radius: 50%
+	}
+
 	.UserAvatarEditor-mask {
 		border: 4px solid #fff;
 		border-radius: 50%;
 		-webkit-backdrop-filter: saturate(180%) blur(20px);
 		backdrop-filter: saturate(180%) blur(20px);
+		background-color: rgba(255, 255, 255, .3);
 		transition: all .5s ease-in-out
 	}
 	/* ====== 个人主页 - 修改头像 ====== */
 	
 	
 	/* ====== 专栏导航栏 ====== */
+	.ContentItem-actions {
+		background: none
+	}
+
 	.ColumnPageHeader.is-fixed {
 		-webkit-backdrop-filter: saturate(180%) blur(20px);
 		backdrop-filter: saturate(180%) blur(20px);
@@ -80,6 +90,56 @@ p {
 		background-color: rgba(9,9,9,.1)
 	}
 	/* ====== 专栏导航栏 ====== */
+
+
+	/* ====== 列表 - 搜索栏 & 提醒 & 私信 & 更多 ====== */
+	.Popover-content--fixed {
+		margin-top: 4px;
+		background: none;
+		-webkit-backdrop-filter: saturate(180%) blur(20px);
+		backdrop-filter: saturate(180%) blur(20px);
+		background-color: rgba(255,255,255,.8);
+		border: 1px solid rgba(9,9,9,.1);
+		box-shadow: rgba(9,9,9,.2) 0 0 10px
+	}
+/* ====== 列表 - 搜索栏 & 提醒 & 私信 & 更多 ====== */
+
+
+	/* ====== Hover 用户头像加载卡片 ====== */
+	.HoverCard-loading {
+		-webkit-backdrop-filter: saturate(180%) blur(20px);
+	 backdrop-filter: saturate(180%) blur(20px);
+	 background: none;
+	 background-color: rgba(255, 255, 255, 0.8);
+	 border-radius: 6px;
+	 box-shadow: rgba(9,9,9,.2) 0 0 10px
+ }
+ /* ====== Hover 用户头像加载卡片 ====== */
+
+
+ /* ====== Hover 用户头像显示的卡片 ====== */
+ .HoverCard {
+	 -webkit-backdrop-filter: saturate(180%) blur(20px);
+	 backdrop-filter: saturate(180%) blur(20px);
+		background: none;
+	 background-color: rgba(255, 255, 255, 0.8);
+	 border-radius: 6px;
+	 box-shadow: rgba(9,9,9,.2) 0 0 10px
+ }
+
+ .HoverCard-titleContainer {
+	 border-bottom-color: rgba(9,9,9,.06)
+ }
+
+ .HoverCard-item {
+	 border-bottom-color: rgba(9,9,9,.06)
+ }
+
+ .UserHoverCard-infoDivider {
+	 background: none;
+	 background-color: rgba(9,9,9,.12)
+ }
+ /* ====== Hover 用户头像显示的卡片 ====== */
 }
 
 
@@ -105,6 +165,10 @@ p {
 
 /* ====== 问题详情页边栏广告 ====== */
 .Question-sideColumn .Sticky>.Card:first-child {
+	display: none
+}
+
+.Question-sideColumn .Sticky .QuestionSidebarTopicMeta {
 	display: none
 }
 /* ====== 问题详情页边栏广告 ====== */
@@ -164,6 +228,21 @@ a.Menu-item.AnswerItem-selfMenuItem:hover {
 }
 /* 申请授权 & 禁止转载 */
 /* 全局 svg 按钮 */
+
+
+/* ====== 排序 ====== */
+.Popover .Select-plainButton {
+	background: none;
+}
+
+.Select-option {
+color: rgba(9,9,9,.5)
+}
+
+.Select-option:hover {
+color: rgba(9,9,9,.6)
+}
+/* ====== 排序 ====== */
 
 
 
@@ -266,6 +345,86 @@ a.Menu-item.AnswerItem-selfMenuItem:hover {
 /* ====== 搜索栏 ====== */
 
 
+/* ====== 搜索栏列表 ====== */
+.SearchBar-menu {
+	padding-top: 0
+}
+
+.SearchBar-label {
+	height: 15px;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	font-size: 15px;
+	font-weight: bold;
+	color: red;
+	text-align: center;
+	line-height: 15px;
+	border-bottom-color: rgba(9,9,9,.1)
+}
+
+.Menu-item {
+	color: #333;
+	background: none !important
+}
+
+.Menu-item.is-active {
+	color: #000;
+	background-color: rgba(200,200,200,.3) !important
+}
+
+.SearchBar-label--history {
+	margin-top: 7px;
+	border-top: 1px solid rgba(9,9,9,.1)
+}
+
+/* 清空 */
+.SearchBar-historyIconWrapper {
+	line-height: 24px;
+	color: rgba(9,9,9,.5);
+	font-weight: normal
+}
+
+.SearchBar-historyIconWrapper:hover {
+	color: rgba(9,9,9,.6)
+}
+
+.SearchBar-historyIconWrapper .Zi.Zi--TrashOutline {
+	fill: rgba(9,9,9,.4)
+}
+
+.SearchBar-historyIconWrapper:hover .Zi.Zi--TrashOutline {
+	fill: rgba(9,9,9,.5)
+}
+/* 清空 */
+
+.AutoComplete-group .Menu-item:first-child {
+	margin-top: 7px
+}
+
+.SearchBar-hasValueMenu .SearchBar-historyItem {
+	line-height: 25px
+}
+
+.SearchBar-historyItemContent.blueFont span {
+	color: red
+}
+
+.SearchBar-defaultResult em, .SearchBar-historyItemContent.blueFont em {
+	font-weight: bold;
+	color: red
+}
+
+.SearchBar-searchLink {
+	color: #666;
+	border-top: 1px solid rgba(9,9,9,.06)
+}
+
+.SearchBar-searchLink:hover {
+	color: #333
+}
+/* ====== 搜索栏列表 ====== */
+
+
 /* ====== 提醒 & 私信 ====== */
 /* 提醒图标 */
 .Zi.Zi--Bell {
@@ -321,28 +480,35 @@ a.Menu-item.AnswerItem-selfMenuItem:hover {
 }
 
 .PushNotifications-item:hover {
-    background-color: rgba(220,220,220,.2);
+    background-color: rgba(220, 220, 220, .3);
     cursor: pointer
 }
 
-.PushNotifications-newItem {
-    background-color: transparent
+.PushNotifications-newItem, .Messages-newItem {
+	background-color: transparent
 }
 
 /* 新消息圆点标示 */
-.PushNotifications-newItem:before {
+.PushNotifications-newItem:before, .Messages-newItem:before {
 	width: 5px;
 	height: 5px;
-	margin-left: -13px;
-	position: relative;
-	top: 9px;
+	position: absolute;
 	/* 经典红 */
-	background: red;
+	background: #f00;
 	/* 知乎蓝 */
 	background: #0084ff;
 	border-radius: 50%;
-	float: left;
 	content: ""
+}
+
+.PushNotifications-newItem:before {
+	top: 25px;
+	left: 7px
+}
+
+.Messages-newItem:before {
+	top: 34.5px;
+	left: 5px
 }
 /* 新消息圆点标示 */
 
@@ -373,7 +539,7 @@ a.Menu-item.AnswerItem-selfMenuItem:hover {
 }
 
 .Messages-item:hover {
-    background-color: rgba(220,220,220,.2)
+    background-color: rgba(220, 220, 220, .3)
 }
 
 .Messages-footer {
@@ -550,7 +716,7 @@ a.Menu-item.AnswerItem-selfMenuItem:hover {
 /* 黑色 */
 
 /* 白色毛玻璃 */
-@supports (-webkit-backdrop-filter: none) {
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
 	.Modal-backdrop {
 		-webkit-backdrop-filter: saturate(180%) blur(20px);
 		backdrop-filter: saturate(180%) blur(20px);
@@ -580,7 +746,7 @@ a.Menu-item.AnswerItem-selfMenuItem:hover {
 /* 白色毛玻璃 */
 
 /* 黑色毛玻璃 */
-@supports (-webkit-backdrop-filter: none) {
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
 	.Modal-backdrop {
 		-webkit-backdrop-filter: saturate(180%) blur(20px);
 		backdrop-filter: saturate(180%) blur(20px);
