@@ -1,5 +1,48 @@
 /* 问题详情页 */
 
+/* ====== 导航栏标题自动隐藏 ====== */
+.PageHeader.is-shown .QuestionHeader-main {
+	-webkit-transform: translateY(-38px);
+	transform: translateY(-38px);
+	-webkit-transition: -webkit-transform .3s 2s;
+	transition: transform .3s 2s;
+	cursor: pointer
+}
+
+.PageHeader.is-shown .QuestionHeader-main:hover {
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+	-webkit-transition-delay: .5s;
+	transition-delay: .5s
+}
+
+.PageHeader.is-shown .QuestionHeader-main::after {
+	width: 8px;
+	height: 8px;
+	margin: -4px 0 0 -4px;
+	position: absolute;
+	left: 50%;
+	border-width: 0 2px 2px 0;
+	border-style: solid;
+	border-color: #0077e6;
+	-webkit-transform: rotate(45deg) scale(1);
+	transform: rotate(45deg) scale(1);
+	-webkit-transition: -webkit-filter .3s 2s, -webkit-transform .3s 2s;
+	transition: filter .3s 2s, transform .3s 2s;
+	content: ""
+}
+
+.PageHeader.is-shown .QuestionHeader-main:hover::after {
+	-webkit-filter: opacity(0);
+	filter: opacity(0);
+	-webkit-transform: rotate(45deg) scale(0);
+	transform: rotate(45deg) scale(0);
+	-webkit-transition: -webkit-filter .3s .5s, -webkit-transform .3s .5s;
+	transition: filter .3s .5s, transform .3s .5s
+}
+/* ====== 导航栏标题自动隐藏 ====== */
+
+
 /* ====== 问题状态 ====== */
 .QuestionStatus-bar {
 	margin: 10px auto;
@@ -66,17 +109,6 @@
 	display: none
 }
 /* ====== 顶部查看全部回答 ====== */
-
-
-/* 默认排序 & 按时间排序 */
-.Select-list.Answers-select>.Select-option {
-	color: rgba(9,9,9,.5)
-}
-
-.Select-list.Answers-select>.Select-option:hover {
-	color: rgba(9,9,9,.6)
-}
-/* 默认排序 & 按时间排序 */
 
 
 /* ====== 回答卡片 padding ====== */
