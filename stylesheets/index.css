@@ -10,9 +10,23 @@
 	border-radius: 6px 6px 0 0
 }
 
-.ListShortcut .Topstory-recommend .Card, .ListShortcut .Topstory-follow .Card {
-	border-radius: 0
+/* 问题列表加载卡片 */
+.Topstory-mainColumnCard {
+	border-radius: 6px
 }
+
+.ListShortcut .Topstory-recommend .Card {
+	border-radius: 0 0 6px 6px
+}
+
+.ListShortcut .Topstory-hot {
+	border-radius: 0 0 6px 6px
+}
+
+.ListShortcut .Topstory-follow .Card {
+	border-radius: 0 0 6px 6px
+}
+/* 问题列表加载卡片 */
 
 .Card.TopstoryItem.TopstoryItem-isRecommend {
 	border-radius: 0
@@ -78,26 +92,38 @@
 /* ====== 边栏 ====== */
 /* ================== */
 
-/* ====== 写回答 & 写文章 & 写想法 ====== */
-.GlobalWrite-navIcon {
-	width: 38px;
-  	height: 38px;
-  	color: rgba(9,9,9,.4)
+/* ====== 回答问题 & 发视频 & 写文章 & 写想法 ====== */
+.NewGlobalWrite-topItem svg {
+	-webkit-transition: -webkit-transform .2s;
+	transition: transform .2s
 }
 
-.GlobalWrite-navItem:hover>.GlobalWrite-navIcon {
+.NewGlobalWrite-topItem:hover svg {
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2)
+}
+
+.NewGlobalWrite-topItem .NewGlobalWrite-topTitle {
+	font-weight: bold;
 	color: rgba(9,9,9,.5)
 }
 
-.GlobalWrite-navTitle {
-	font-size: 14px;
-  	color: rgba(9,9,9,.5)
-}
-
-.GlobalWrite-navItem:hover>.GlobalWrite-navTitle {
+.NewGlobalWrite-topItem:hover .NewGlobalWrite-topTitle {
 	color: rgba(9,9,9,.6)
 }
-/* ====== 写回答 & 写文章 & 写想法 ====== */
+
+.NewGlobalWrite-answerLater .NewGlobalWrite-navTitle, .NewGlobalWrite-navDraft .NewGlobalWrite-navTitle {
+	color: rgba(9,9,9,.5)
+}
+
+.NewGlobalWrite-answerLater:hover .NewGlobalWrite-navTitle, .NewGlobalWrite-navDraft:hover .NewGlobalWrite-navTitle {
+	color: rgba(9,9,9,.6)
+}
+
+.NewGlobalWrite-navNumber {
+	background: none
+}
+/* ====== 回答问题 & 发视频 & 写文章 & 写想法 ====== */
 
 
 /* ====== 我的草稿 ====== */
