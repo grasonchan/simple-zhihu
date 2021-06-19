@@ -76,10 +76,6 @@ p {
 	
 	
 	/* ====== 专栏导航栏 ====== */
-	.ContentItem-actions {
-		background: none
-	}
-
 	.ColumnPageHeader.is-fixed {
 		-webkit-backdrop-filter: saturate(180%) blur(20px);
 		backdrop-filter: saturate(180%) blur(20px);
@@ -89,12 +85,23 @@ p {
 	.ColumnPageHeader-Line {
 		background-color: rgba(9,9,9,.1)
 	}
+
+	.Post-Main .ContentItem-actions {
+		padding-left: 299px;
+		background: none
+	}
+
+	.Post-Main .RichContent-actions.is-fixed {
+		width: 100% !important;
+		margin-bottom: unset;
+		padding-bottom: 10px;
+		left: 0 !important
+	}
 	/* ====== 专栏导航栏 ====== */
 
 
 	/* ====== 列表 - 搜索栏 & 提醒 & 私信 & 更多 ====== */
 	.Popover-content--fixed {
-		margin-top: 4px;
 		background: none;
 		-webkit-backdrop-filter: saturate(180%) blur(20px);
 		backdrop-filter: saturate(180%) blur(20px);
@@ -270,31 +277,15 @@ a.Menu-item.AnswerItem-selfMenuItem:hover {
 /* ====== 导航栏 ====== */
 /* =================== */
 
-/* ====== 首页 & 发现 & 等你来答 ====== */
-.AppHeader-Tabs {
-	margin: 0 28px
-}
-
-.AppHeader-TabsLink.is-active {
-	color: #333
-}
-
+/* ====== TabsLink ====== */
 .AppHeader-TabsLink {
 	color: #888
 }
-
-.AppHeader-TabsLink:hover {
-	color: #333
-}
-/* ====== 首页 & 发现 & 等你来答 ====== */
+/* ====== TabsLink ====== */
 
 
 /* ====== 搜索栏 ====== */
 /* 搜索框 */
-.SearchBar {
-	margin: 0 25px
-}
-
 .SearchBar-tool .Input-wrapper {
 	border: 1px solid rgba(9,9,9,.1)
 }
@@ -336,12 +327,6 @@ a.Menu-item.AnswerItem-selfMenuItem:hover {
   color: rgba(9,9,9,.4)
 }
 /* 搜索框 */
-
-/* 提问按钮 */
-.SearchBar-askButton {
-	margin-left: 15px
-}
-/* 提问按钮 */
 /* ====== 搜索栏 ====== */
 
 

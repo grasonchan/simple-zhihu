@@ -93,34 +93,34 @@
 /* ================== */
 
 /* ====== 回答问题 & 发视频 & 写文章 & 写想法 ====== */
-.NewGlobalWrite-topItem svg {
+.GlobalWrite-topItem svg {
 	-webkit-transition: -webkit-transform .2s;
 	transition: transform .2s
 }
 
-.NewGlobalWrite-topItem:hover svg {
+.GlobalWrite-topItem:hover svg {
 	-webkit-transform: scale(1.2);
 	transform: scale(1.2)
 }
 
-.NewGlobalWrite-topItem .NewGlobalWrite-topTitle {
+.GlobalWrite-topItem .GlobalWrite-topTitle {
 	font-weight: bold;
 	color: rgba(9,9,9,.5)
 }
 
-.NewGlobalWrite-topItem:hover .NewGlobalWrite-topTitle {
-	color: rgba(9,9,9,.6)
+.GlobalWrite-topItem:hover .GlobalWrite-topTitle {
+	color: rgba(9,9,9,.6) !important
 }
 
-.NewGlobalWrite-answerLater .NewGlobalWrite-navTitle, .NewGlobalWrite-navDraft .NewGlobalWrite-navTitle {
+.GlobalWrite-answerLater .GlobalWrite-navTitle, .GlobalWrite-navDraft .GlobalWrite-navTitle {
 	color: rgba(9,9,9,.5)
 }
 
-.NewGlobalWrite-answerLater:hover .NewGlobalWrite-navTitle, .NewGlobalWrite-navDraft:hover .NewGlobalWrite-navTitle {
+.GlobalWrite-answerLater:hover .GlobalWrite-navTitle, .GlobalWrite-navDraft:hover .GlobalWrite-navTitle {
 	color: rgba(9,9,9,.6)
 }
 
-.NewGlobalWrite-navNumber {
+.GlobalWrite-navNumber {
 	background: none
 }
 /* ====== 回答问题 & 发视频 & 写文章 & 写想法 ====== */

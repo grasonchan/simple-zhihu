@@ -59,9 +59,8 @@
 
 /* ====== 边栏 ====== */
 /* 个人成就 */
-.Card-header.Profile-sideColumnTitle>.Card-headerText {
-  width: 100%;
-  text-align: center
+.Profile-sideColumn .Card-header {
+  justify-content: center
 }
 /* 个人成就 */
 
