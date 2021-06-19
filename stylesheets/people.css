@@ -47,11 +47,11 @@
 
 /* 更多 */
 .Tabs-link>.Button--plain {
-  color: #1A1A1A
+  color: #1a1a1a
 }
 
 .Profile-popoverMenuItem .Link-meta {
-  color: rgba(9,9,9,.4)
+  color: rgba(9, 9, 9, .4)
 }
 /* 更多 */
 /* ====== 主栏 ====== */
@@ -72,9 +72,9 @@
 .Profile-sideColumn>.Profile-lightList, .Profile-sideColumn>.Profile-footerOperations {
   margin: 10px 0;
   padding: 10px 25px;
-  background-color: #FFF;
+  background-color: #fff;
   border-radius: 6px;
-  box-shadow: 0 1px 3px rgba(26,26,26,.1);
+  box-shadow: 0 1px 3px rgba(26, 26, 26, .1);
   box-sizing: border-box
 }
 

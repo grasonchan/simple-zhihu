@@ -1,16 +1,16 @@
 /* 收藏夹 */
 .Collections-mainColumn {
-	-webkit-align-self: flex-start;
-	align-self: flex-start;
-	border-radius: 6px;
-	-webkit-box-shadow: 0 1px 3px rgba(26,26,26,.1);
-	box-shadow: 0 1px 3px rgba(26,26,26,.1)
+  -webkit-align-self: flex-start;
+  align-self: flex-start;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 1px 3px rgba(26, 26, 26, .1);
+  box-shadow: 0 1px 3px rgba(26, 26, 26, .1)
 }
 
 .Card.CollectionsHeader {
-	border-radius: 6px 6px 0 0;
-	-webkit-box-shadow: none;
-	box-shadow: none
+  border-radius: 6px 6px 0 0;
+  -webkit-box-shadow: none;
+  box-shadow: none
 }
 
 
@@ -19,9 +19,9 @@
 }
 
 .Card.SelfCollectionItem:last-child {
-	border-radius: 0 0 6px 6px
+  border-radius: 0 0 6px 6px
 }
 
 .Card.SelfCollectionItem:last-child>.SelfCollectionItem-innerContainer {
-	border-bottom: none
+  border-bottom: none
 }

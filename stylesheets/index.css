@@ -7,62 +7,62 @@
 /* ====== 布局方式 ====== */
 /* 分割线布局 */
 .Card.Topstory-noMarginCard.Topstory-tabCard {
-	border-radius: 6px 6px 0 0
+  border-radius: 6px 6px 0 0
 }
 
 /* 问题列表加载卡片 */
 .Topstory-mainColumnCard {
-	border-radius: 6px
+  border-radius: 6px
 }
 
 .ListShortcut .Topstory-recommend .Card {
-	border-radius: 0 0 6px 6px
+  border-radius: 0 0 6px 6px
 }
 
 .ListShortcut .Topstory-hot {
-	border-radius: 0 0 6px 6px
+  border-radius: 0 0 6px 6px
 }
 
 .ListShortcut .Topstory-follow .Card {
-	border-radius: 0 0 6px 6px
+  border-radius: 0 0 6px 6px
 }
 /* 问题列表加载卡片 */
 
 .Card.TopstoryItem.TopstoryItem-isRecommend {
-	border-radius: 0
+  border-radius: 0
 }
 
 .Card.TopstoryItem.TopstoryItem-isFollow {
-	border-radius: 0
+  border-radius: 0
 }
 
 .HotItem:not(:first-child) {
-	border-top: 1px solid #f0f2f7 !important
+  border-top: 1px solid #f0f2f7 !important
 }
 /* 分割线布局 */
 
 /* 卡片布局 */
 .Card.Topstory-noMarginCard.Topstory-tabCard {
-	margin-bottom: 0;
+  margin-bottom: 0;
   border-radius: 6px 6px 0 0
 }
 
 .Topstory-mainColumn .Card {
-	margin-bottom: 15px;
-	border-radius: 6px;
-	box-shadow: 0 1px 3px rgba(26,26,26,.1)
+  margin-bottom: 15px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(26,26,26,.1)
 }
 
 .Card.TopstoryItem.TopstoryItem-isRecommend:first-child {
-	border-radius: 0 0 6px 6px
+  border-radius: 0 0 6px 6px
 }
 
 .Topstory-content .Card.TopstoryItem:first-child {
-	border-radius: 0 0 6px 6px
+  border-radius: 0 0 6px 6px
 }
 
 .HotItem:not(:first-child) {
-	border-top: 1px solid #f0f2f7
+  border-top: 1px solid #f0f2f7
 }
 /* 卡片布局 */
 /* ====== 布局方式 ====== */
@@ -70,18 +70,18 @@
 
 /* ====== 图片圆角 ====== */
 .ztext .origin_image, .ztext .content_image, .ArticleItem-image {
-	border-radius: 6px
+  border-radius: 6px
 }
 /* ====== 图片圆角 ====== */
 
 
 /* ====== 你可能感兴趣的话题 ====== */
 .ActionCard>.ActionCard-topicsContainer>.ActionCard-topics>.ActionCard-topic {
-	width: 163.5px
+  width: 163.5px
 }
 
 .ActionCard>.ActionCard-topicsContainer>.ActionCard-topics>.ActionCard-topic>.ActionCard-topic-button {
-	height: 26px
+  height: 26px
 }
 /* ====== 你可能感兴趣的话题 ====== */
 
@@ -94,45 +94,45 @@
 
 /* ====== 回答问题 & 发视频 & 写文章 & 写想法 ====== */
 .GlobalWrite-topItem svg {
-	-webkit-transition: -webkit-transform .2s;
-	transition: transform .2s
+  -webkit-transition: -webkit-transform .2s;
+  transition: transform .2s
 }
 
 .GlobalWrite-topItem:hover svg {
-	-webkit-transform: scale(1.2);
-	transform: scale(1.2)
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2)
 }
 
 .GlobalWrite-topItem .GlobalWrite-topTitle {
-	font-weight: bold;
-	color: rgba(9,9,9,.5)
+  font-weight: bold;
+  color: rgba(9, 9, 9, .5)
 }
 
 .GlobalWrite-topItem:hover .GlobalWrite-topTitle {
-	color: rgba(9,9,9,.6) !important
+  color: rgba(9, 9, 9, .6) !important
 }
 
 .GlobalWrite-answerLater .GlobalWrite-navTitle, .GlobalWrite-navDraft .GlobalWrite-navTitle {
-	color: rgba(9,9,9,.5)
+  color: rgba(9, 9, 9, .5)
 }
 
 .GlobalWrite-answerLater:hover .GlobalWrite-navTitle, .GlobalWrite-navDraft:hover .GlobalWrite-navTitle {
-	color: rgba(9,9,9,.6)
+  color: rgba(9, 9, 9, .6)
 }
 
 .GlobalWrite-navNumber {
-	background: none
+  background: none
 }
 /* ====== 回答问题 & 发视频 & 写文章 & 写想法 ====== */
 
 
 /* ====== 我的草稿 ====== */
 .Zi.Zi--Draft {
-	color: rgba(9,9,9,.4)
+  color: rgba(9, 9, 9, .4)
 }
 
 .GlobalSideBar-navText {
-	color: rgba(9,9,9,.5)
+  color: rgba(9, 9, 9, .5)
 }
 /* ====== 我的草稿 ====== */
 
@@ -140,27 +140,27 @@
 /* ====== 边栏控件 ====== */
 /* 类别列表 */
 .GlobalSideBar-categoryLabel {
-	font-size: 14px;
-	color: rgba(9,9,9,.5)
+  font-size: 14px;
+  color: rgba(9, 9, 9, .5)
 }
 /* 类别列表 */
 
 /* nav 列表 */
 .GlobalSideBar-navIcon {
-	fill: rgba(9,9,9,.4)
+  fill: rgba(9, 9, 9, .4)
 }
 
 .GlobalSideBar-navList .Button {
-	color: rgba(9,9,9,.5)
+  color: rgba(9, 9, 9, .5)
 }
 
 .GlobalSideBar-navNumber {
-	background: none !important;
-  color: rgba(9,9,9,.4)
+  background: none !important;
+  color: rgba(9, 9, 9, .4)
 }
 
 .GlobalSideBar-navLink:hover .GlobalSideBar-navNumber {
-	background: none
+  background: none
 }
 /* nav 列表 */
 /* ====== 边栏控件 ====== */
