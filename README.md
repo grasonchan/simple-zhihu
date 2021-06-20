@@ -1,19 +1,40 @@
 # simple-zhihu
-### 关于使用
-1. 下载安装 Stylish 扩展
-    * Safari：[Stylish](https://github.com/350d/stylish)
-    * Safari 12：[FreeStyler](https://safari-extensions.apple.com/details/?id=ws.freestyler.freestyler-SRV36C8E2C)
-    * Chrome：[Stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=zh-CN)
-    * Firefox：[Stylish](https://addons.mozilla.org/en-US/firefox/addon/stylish/?src=external-userstyleshome/)
-2. 打开 [Simple_Zhihu](https://userstyles.org/styles/142714/simple-zhihu) 页面，点击 `Customize Settings` 进行自定义设置，然后点击 `Install Style` 安装
-3. Enjoy
 
-### 相关说明
-* 目前只有 Safari 浏览器支持毛玻璃效果
-* 因 Stylish 本身原因，Safari 无法直接安装主题，需在 Stylish 或 FreeStyler 扩展新建一个主题，然后在其它浏览器安装主题后将代码和应用域复制过来，更新同理
-* 尽在细节......
+## 使用
 
-### 效果截图
-<div align="center">
-    <img alt="zhihu" src="https://github.com/grasonchan/simple-zhihu/raw/master/screenshot/zhihu.png" />
-</div>
+1. 安装 Stylish 相关的浏览器扩展
+1. 打开 [Simple_Zhihu](https://userstyles.org/styles/142714/simple-zhihu) 页面，点击 `Customize Settings` 进行自定义设置，然后点击 `Install Style` 安装
+
+## 说明
+
+* **全局毛玻璃效果**：支持 `Safari`、`Chrome`、`Edge`、`Firefox`、`Opear` 等浏览器，请将浏览器升级到较新的版本
+* **导航栏标题自动隐藏**：问题详情页中，导航栏的标题会自动隐藏，有助于隐私保护；鼠标悬停到指示箭头及其上方位置时，可暂时性重新显示标题
+
+## 适配内容
+
+* 导航栏标题自动隐藏
+* 全局毛玻璃效果
+* 新消息圆点标示
+* 全局适配及广告去除
+
+## 预览
+
+### 导航栏标题自动隐藏（该动画做了放慢处理）
+
+https://user-images.githubusercontent.com/19476925/122683987-6684a200-d235-11eb-9e7d-2bf809e95831.mov
+
+### 全局毛玻璃效果
+
+![blur backdrop](./screenshots/blur_backdrop.png)
+
+### 新消息圆点标示
+
+![new notifications](./screenshots/new_notifications.png)
+
+### 页面
+
+![zhihu](./screenshots/zhihu.png)
+![search](./screenshots/search.png)
+![topic](./screenshots/topic.png)
+![question](./screenshots/question.png)
+![people](./screenshots/people.png)
