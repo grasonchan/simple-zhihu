@@ -4,8 +4,6 @@
 /* ====== 问题列表 ====== */
 /* ===================== */
 
-/* ====== 布局方式 ====== */
-/* 分割线布局 */
 .Card.Topstory-noMarginCard.Topstory-tabCard {
   border-radius: 6px 6px 0 0
 }
@@ -39,33 +37,6 @@
 .HotItem:not(:first-child) {
   border-top: 1px solid #f0f2f7 !important
 }
-/* 分割线布局 */
-
-/* 卡片布局 */
-.Card.Topstory-noMarginCard.Topstory-tabCard {
-  margin-bottom: 0;
-  border-radius: 6px 6px 0 0
-}
-
-.Topstory-mainColumn .Card {
-  margin-bottom: 15px;
-  border-radius: 6px;
-  box-shadow: 0 1px 3px rgba(26,26,26,.1)
-}
-
-.Card.TopstoryItem.TopstoryItem-isRecommend:first-child {
-  border-radius: 0 0 6px 6px
-}
-
-.Topstory-content .Card.TopstoryItem:first-child {
-  border-radius: 0 0 6px 6px
-}
-
-.HotItem:not(:first-child) {
-  border-top: 1px solid #f0f2f7
-}
-/* 卡片布局 */
-/* ====== 布局方式 ====== */
 
 
 /* ====== 图片圆角 ====== */

@@ -112,7 +112,7 @@ p {
   /* ====== 列表 - 搜索栏 & 提醒 & 私信 & 更多 ====== */
 
 
-  /* ====== Hover 用户头像加载卡片 ====== */
+  /* ====== Hover 卡片 - loading ====== */
   .HoverCard-loading {
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);
@@ -121,10 +121,10 @@ p {
     border-radius: 6px;
     box-shadow: rgba(9, 9, 9, .2) 0 0 10px
   }
-  /* ====== Hover 用户头像加载卡片 ====== */
+  /* ====== Hover 卡片 - loading ====== */
 
 
-  /* ====== Hover 用户头像显示的卡片 ====== */
+  /* ====== Hover 卡片 ====== */
   .HoverCard {
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);
@@ -146,7 +146,7 @@ p {
     background: none;
     background-color: rgba(9, 9, 9, .12)
   }
-  /* ====== Hover 用户头像显示的卡片 ====== */
+  /* ====== Hover 卡片 ====== */
   }
 
 
@@ -250,25 +250,6 @@ a.Menu-item.AnswerItem-selfMenuItem:hover {
   color: rgba(9, 9, 9, .6)
 }
 /* ====== 排序 ====== */
-
-
-
-
-/* ===================== */
-/* ====== 鼠标移上表情的动效 ====== */
-/* ===================== */
-.StickerPopover-stickers-item:hover {
-  cursor: pointer
-}
-
-.StickerPopover-stickers-item img {
-  transition: transform .3s
-}
-
-.StickerPopover-stickers-item:hover img {
-  transform: scale(1.3);
-  transition: transform .3s
-}
 
 
 
@@ -478,10 +459,7 @@ a.Menu-item.AnswerItem-selfMenuItem:hover {
   width: 5px;
   height: 5px;
   position: absolute;
-  /* 经典红 */
   background: #f00;
-  /* 知乎蓝 */
-  background: #0084ff;
   border-radius: 50%;
   content: ""
 }
@@ -608,33 +586,10 @@ a.Menu-item.AnswerItem-selfMenuItem:hover {
 /* ====== 问题列表 & 文章列表 ====== */
 /* =============================== */
 
-/* ====== 链接颜色 ====== */
-.ContentItem-title a {
-  color: #1f69c6
-}
-
-.HotItem>.HotItem-content .HotItem-title {
-  color: #1f69c6
-}
-
-.HotItem>.HotItem-content>a:hover .HotItem-title {
-  color: #175199
-}
-
-.ArticleItem .ArticleItem-Title {
-  color: #1f69c6
-}
-
-/* 问题列表标题颜色 */
-.ContentItem-title a {
-  color: #1f69c6
-}
-/* 问题列表标题颜色 */
-/* ====== 链接颜色 ====== */
-
-
 /* ====== 链接 margin ====== */
-.ContentItem.AnswerItem>h2.ContentItem-title, .ContentItem.ArticleItem>h2.ContentItem-title {
+.ContentItem.AnswerItem>h2.ContentItem-title,
+.ContentItem.ArticleItem>h2.ContentItem-title,
+.ContentItem.ZVideoItem>h2.ContentItem-title {
   margin-top: 0
 }
 /* ====== 链接 margin ====== */
@@ -654,7 +609,6 @@ a.Menu-item.AnswerItem-selfMenuItem:hover {
 /* ====== Modal 背景 ====== */
 /* ======================== */
 
-/* 白色 */
 .Modal-backdrop {
   background-color: #f1f1f1
 }
@@ -676,87 +630,6 @@ a.Menu-item.AnswerItem-selfMenuItem:hover {
 .ImageView.is-active {
   background-color: #f1f1f1
 }
-/* 白色 */
-
-/* 黑色 */
-.Modal-backdrop {
-  background-color: #999
-}
-
-.Modal-wrapper>.Modal--large, .Modal-wrapper>.Modal--fullPage, .Modal--default {
-  border-radius: 6px
-}
-
-.Modal-closeIcon {
-  fill: rgba(255, 255, 255, .6)
-}
-
-.Modal-closeButton:hover>.Modal-closeIcon {
-  fill: rgba(255, 255, 255, .7)
-}
-
-.ImageView.is-active {
-  background-color: #999
-}
-/* 黑色 */
-
-/* 白色毛玻璃 */
-@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-  .Modal-backdrop {
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
-    backdrop-filter: saturate(180%) blur(20px);
-    background-color: rgba(255, 255, 255, .8)
-  }
-
-  .Modal-wrapper>.Modal--large, .Modal-wrapper>.Modal--fullPage, .Modal--default {
-    border: .5px solid rgba(9, 9, 9, .1);
-    border-radius: 6px;
-    box-shadow: rgba(9, 9, 9, .1) 0 0 10px
-  }
-
-  .Modal-closeIcon {
-    fill: rgba(9, 9, 9, .3)
-  }
-
-  .Modal-closeButton:hover>.Modal-closeIcon {
-    fill: rgba(9, 9, 9, .4)
-  }
-
-  .ImageView.is-active {
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
-    backdrop-filter: saturate(180%) blur(20px);
-    background-color: rgba(255, 255, 255, .8)
-  }
-}
-/* 白色毛玻璃 */
-
-/* 黑色毛玻璃 */
-@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-  .Modal-backdrop {
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
-    backdrop-filter: saturate(180%) blur(20px);
-    background-color: rgba(9, 9, 9, .8)
-  }
-
-  .Modal-wrapper>.Modal--large, .Modal-wrapper>.Modal--fullPage, .Modal--default {
-    border-radius: 6px
-  }
-
-  .Modal-closeIcon {
-    fill: rgba(255, 255, 255, .6)
-  }
-
-  .Modal-closeButton:hover>.Modal-closeIcon {
-    fill: rgba(255, 255, 255, .7)
-  }
-
-  .ImageView.is-active {
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
-    backdrop-filter: saturate(180%) blur(20px);
-    background-color: rgba(9, 9, 9, .8)
-  }
-}
-/* 黑色毛玻璃 */
 
 
 

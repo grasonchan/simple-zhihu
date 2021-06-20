@@ -85,32 +85,6 @@
 /* ====== 问题回答 Tip ====== */
 
 
-/* ====== 顶部查看全部回答 ====== */
-.Question-mainColumn {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-flow: column nowrap;
-  flex-flow: column nowrap
-}
-
-.Question-mainColumn>.Card.MoreAnswers {
-  margin-bottom: 0;
-  -webkit-order: 2;
-  order: 2
-}
-
-.Question-mainColumn>.Card.ViewAll:last-child {
-  margin-bottom: 10px;
-  -webkit-order: 1;
-  order: 1
-}
-
-.Question-main .Question-mainColumn>.Card:first-child {
-  display: none
-}
-/* ====== 顶部查看全部回答 ====== */
-
-
 /* ====== 回答卡片 padding ====== */
 .Question-mainColumn>.Card.AnswerCard>.QuestionAnswer-content .RichContent-inner {
   padding: 10px 15px
@@ -138,13 +112,6 @@
   border-radius: 6px
 }
 /* ====== Modal ====== */
-
-
-/* ====== 邀请回答 ====== */
-.Card.QuestionInvitation {
-  display: none
-}
-/* ====== 邀请回答 ====== */
 
 
 /* ====== 写回答 - 编辑话题经验 ====== */
@@ -221,18 +188,10 @@
 
 
 /* ====== 关于作者 ====== */
-/* 显示 */
 .Card-header.AnswerAuthor-title>.Card-headerText {
   width: 100%;
   text-align: center
 }
-/* 显示 */
-
-/* 隐藏 */
-.Card.AnswerAuthor {
-  display: none
-}
-/* 隐藏 */
 /* ====== 关于作者 ====== */
 
 
@@ -264,7 +223,6 @@
 
 
 /* ====== 相关推荐 ====== */
-/* 显示 */
 .Card-header.RelatedCommodities-title>.Card-headerText {
   width: 100%;
   text-align: center
@@ -301,12 +259,4 @@
   background: none;
   color: #0084ff
 }
-/* 显示 */
-
-
-/* 隐藏 */
-.Question-sideColumn--sticky .Card:last-of-type {
-  display: none
-}
-/* 隐藏 */
 /* ====== 显示相关推荐 ====== */
