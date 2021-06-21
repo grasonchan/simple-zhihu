@@ -1,5 +1,37 @@
 # CHANGELOG
 
+## 2.5.0 (2021-06-20)
+
+### Bug Fixes
+
+* 修复失效样式，移除部分不再需要的样式 ([3f0aa86](https://github.com/grasonchan/simple-zhihu/commit/3f0aa86d2ff49dc7244c90ea85ab7a2abb71ecb2))
+  * 修复
+    * 首页边栏 GlobalWrite 卡片的 hover 动画
+    * 专栏页的底部操作栏
+    * 用户页的个人成就
+  * 移除全局导航栏的部分适配
+
+### Refactorings
+
+* 删除部分旧有的适配和自定义设置 ([1e85416](https://github.com/grasonchan/simple-zhihu/commit/1e85416a6418a038a87533849d8f701aa06a630e))
+  * 删除的适配
+    * 表情 hover 动画
+    * Modal 的毛玻璃效果，减少对资源的使用
+  * 删除的自定义设置
+    * 移除修改
+      * 首页问题列表布局方式
+      * 列表标题颜色
+      * 问题详情页 - 查看全部回答
+      * 邀请回答
+    * 保留修改
+      * 去除广告
+      * 新消息圆点标示
+      * Modal 背景
+      * 知乎相关链接
+      * 建议反馈 & 回到顶部
+      * 关于作者
+      * 相关推荐
+
 ## 2.4.0 (2020-06-13)
 
 ### New Features
